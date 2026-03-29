@@ -1,10 +1,10 @@
 # claude-auto-setup
 
+`claude-auto-setup` is shipped as package + claude skill.
+
 One prompt more. That's all it costs to have Claude Code search the web, find the right skills, MCPs, hooks, and agents for your task, configure everything automatically, and put your work in an isolated environment you can resume, share, or discard cleanly.
 
-Most Claude Code setups are either completely manual (find a skill, install it, configure hooks, add MCPs, repeat) or locked to hardcoded presets. `claude-auto-setup` is neither: Claude searches the live ecosystem, reasons over what it finds, and builds the environment around your specific task. When you're done, only your code comes back to main — the setup never touches your project.
-
-Sessions are decoupled from Claude Code itself. You can close Claude, come back tomorrow, open a different machine, or hand the session to a teammate. `claudesetup resume` puts you back exactly where you left off.
+ `claude-auto-setup` enables the creation of the best set of skills completely automatically without the need of manual setup and project engineering: those steps are crucial for a big project or enterprise repo but most of the times with the smaller tasks none of this is worht to be setted up. The package is seamlessy integrated with the skill and enable the creation of a whole set of configs, that can be coupled with one or more claude chats and remains completely isolated thanks to a dedicated worktree.
 
 ---
 

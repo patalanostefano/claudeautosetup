@@ -1,0 +1,22 @@
+{
+  "name": "claude-auto-setup",
+  "version": "0.1.0",
+  "description": "AI-guided Claude Code session setup with worktree isolation and resumable sessions",
+  "bin": { "claudesetup": "bin/claudesetup.js" },
+  "main": "lib/index.js",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "keywords": ["claude", "claude-code", "mcp", "skill", "worktree", "setup"],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "files": ["bin/", "lib/", "plugin/", "README.md", "LICENSE"]
+}

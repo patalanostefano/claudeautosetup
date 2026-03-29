@@ -1,0 +1,6 @@
+{
+  "name": "claude-auto-setup",
+  "description": "AI-guided session setup with worktree isolation and export",
+  "version": "0.1.0",
+  "author": { "name": "stefano" }
+}

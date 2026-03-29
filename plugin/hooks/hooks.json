@@ -1,0 +1,13 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "INPUT=$(cat); SESSION_ID=$(echo \"$INPUT\" | jq -r '.session_id // empty'); [ -n \"$SESSION_ID\" ] && claudesetup _record-session-end \"$SESSION_ID\" 2>/dev/null; exit 0",
+          "async": true
+        }
+      ]
+    }
+  ]
+}

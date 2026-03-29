@@ -28,12 +28,14 @@
   },
   "scripts": {
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "postinstall": "node scripts/postinstall.js"
   },
   "files": [
     "bin/",
     "lib/",
     "plugin/",
+    "scripts/",
     "README.md",
     "LICENSE"
   ]

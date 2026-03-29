@@ -35,6 +35,17 @@ import {
   writeSettings,
 } from '../lib/settings.js';
 
+// Allow bare intent: `claudesetup "build X"` → treated as `claudesetup setup "build X"`
+const knownSubcommands = new Set([
+  'setup', 'list', 'resume', 'export', 'erase', 'status',
+  'worktree-create', '_record-file', '_record-session-end',
+  '--help', '-h', '--version', '-V',
+]);
+const firstArg = process.argv[2];
+if (firstArg && !knownSubcommands.has(firstArg) && !firstArg.startsWith('-')) {
+  process.argv.splice(2, 0, 'setup');
+}
+
 const program = new Command();
 
 program

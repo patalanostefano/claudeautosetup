@@ -2,7 +2,10 @@
   "name": "claude-auto-setup",
   "version": "0.1.0",
   "description": "AI-guided Claude Code session setup with worktree isolation and resumable sessions",
-  "bin": { "claudesetup": "bin/claudesetup.js" },
+  "bin": {
+    "claudesetup": "bin/claudesetup.js",
+    "claude-auto-setup": "bin/claudesetup.js"
+  },
   "main": "lib/index.js",
   "type": "module",
   "engines": { "node": ">=18" },
